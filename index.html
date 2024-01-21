@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- owlCarousel -->
     <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
@@ -13,6 +10,14 @@
     <title>樂乃農場</title>
 </head>
 <body>
+    <div class="navbar">
+        <img src="images/LOGO.png" alt="" height="75px">
+        <ul>
+            <li><a href="#about">樂乃農場</a></li>
+            <li><a href="min.html">民生食品</a></li>
+            <li><a href="product.html">產品介紹</a></li>
+        </ul>
+    </div>
     <div class="header">
         <div class="top">
             <img src="images/hand.png" alt="" class="hand" width="30%">
@@ -20,16 +25,21 @@
         </div>
         <div class="header_bg">
             <img src="images/header_bg.png" alt="" class="bg_1" width="100%">
+            <img src="images/famer.png" alt="" class="famer" width="220px">
         </div>
         <div class="vegetable">
-            <img src="images/v1.png" alt="" width="120px">
-            <img src="images/v2.png" alt="" width="130px">
-            <img src="images/v2.png" alt="" width="140px">
-            <img src="images/v3.png" alt="" width="160px">
-            <img src="images/v3.png" alt="" width="180px">
+            <img src="images/v1.png" alt="" width="120px" class="vet" id="v1">
+            <img src="images/v2.png" alt="" width="130px" class="vet" id="v2">
+            <img src="images/v2.png" alt="" width="140px" class="vet" id="v3">
+            <img src="images/v3.png" alt="" width="160px" class="vet" id="v4">
+            <img src="images/v3.png" alt="" width="180px" class="vet" id="v5">
         </div>
+        <img src="images/seed_1.png" alt="" width="60px" class="seed" id="seed1">
+        <img src="images/seed_2.png" alt="" width="60px" class="seed" id="seed2">
+        <img src="images/seed_1.png" alt="" width="60px" class="seed" id="seed3">
+        <img src="images/seed_2.png" alt="" width="60px" class="seed" id="seed4">
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="about_bg">
             <img src="images/header_2.png" alt="" width="100%">
             <div class="title_box">
@@ -96,14 +106,14 @@
                 </div>
             </div>
         </div>
-        <div class="big_vegetable js-fadeInLeft">
+        <div class="big_vegetable">
             <img src="images/big_vegetable.png" alt="" width="400px">
         </div>
 
     </div>
     <div class="contact">
         <div class="container">
-            <div class="title_border">
+            <div class="title_border js-fadeInLeft">
                 <h2>聯<br>絡<br>樂<br>乃</h2>
             </div>
             <div class="contact_conent">
@@ -118,6 +128,16 @@
     </div>
     <footer>
         <img src="images/LOGO_W.png" alt="">
+        <div class="footer_content">
+            <p>民生食品工業股份有限公司</p>
+            <p>Min Sheng Foods Industry Inc.</p>
+            <p>統一編號 60456518</p>
+        </div>
+        <div class="media">
+            <a href="https://www.instagram.com/lonelmango/"><img src="images/IG.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100063876762363"><img src="images/FB.png" alt=""></a>
+            <p>Copyright © 樂乃農場 2023</p>
+        </div>
     </footer>
 </body>
     <script src="vendor/jquery/jquery-3.5.1.min.js"></script>
@@ -125,6 +145,16 @@
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script>
 
+        // 導覽列的變化 偵測視窗滾動事件
+        $(window).scroll(function () {
+            scrolledPx = $(this).scrollTop();
+            if (scrolledPx > 200) {
+                $('.navbar').addClass('show_nav');
+            }
+            else {
+                $('.navbar').removeClass('show_nav');
+            }
+        })
         $('.owl-carousel').owlCarousel({
         loop: true,
         item: 3,
