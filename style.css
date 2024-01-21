@@ -1,0 +1,131 @@
+/* -------------------------- *\
+	Globel
+\* -------------------------- */
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+html,body {
+    font-family: 'Kosugi Maru', sans-serif;
+	margin: 0;
+}
+h1{
+    font-size: 64px;
+    letter-spacing: 40px;
+    margin: 0;
+}
+h3{
+    font-size: 32px;
+}
+p{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 8px;
+}
+
+/* -------------------------- *\
+	Layout
+\* -------------------------- */
+.row{
+    display: flex;
+}
+.col-3{
+    width: 33.333%;
+}
+/* -------------------------- *\
+	Header
+\* -------------------------- */
+.header{
+    width: 100%;
+    background-color: #EBD9B4;
+    padding-bottom: 200px;
+}
+.header_bg{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.top{
+    position: absolute;
+    top: 20px;
+    z-index: 5;
+}
+.top .logo{
+    margin-left: 2%;
+    margin-bottom: 10px;
+}
+.vegetable{
+    background-image:url(images/dust.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+    margin-top: 50px;
+    padding-left: 200px;
+}
+.vegetable img{
+    margin-left: 50px;
+}
+
+/* -------------------------- *\
+	About
+\* -------------------------- */
+.about_bg{
+    background-color: #EBD9B4;
+}
+.title_box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.title_box .line{
+    height: 4px;
+    width: 32%;
+    border-radius:4px;
+    background-color: #EBD9B4;
+}
+.title_box .title{
+    width: 36%;
+    color: #EBD9B4;
+    text-align: center;
+}
+.title_box .title h3{
+    font-size: 20px;
+    letter-spacing: 20px;
+}
+.about_container{
+    width: 75%;
+    background-color: #9DBC98;
+    margin: 0 auto;
+    padding: 16px;
+    border-radius: 20px;
+    margin-top:-100px;
+}
+.about_container .col-3 img{
+    width: 80px;
+}
+.about_container .col-3{
+    text-align: center;
+    color: #F9EFDB;
+    border-right: #EBD9B4 solid 4px;
+    padding: 0 16px;
+}
+.about_container .col-3:last-child{
+    border-right:none;
+}
+.about_container h3{
+    letter-spacing:15px;
+    font-weight: 400;
+}
+
+/* -------------------------- *\
+	News
+\* -------------------------- */
+.news{
+    width: 100%;
+    height: 500px;
+}
