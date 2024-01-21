@@ -47,6 +47,15 @@ p{
 .col-3{
     width: 33.333%;
 }
+.col-4{
+    width: 40%;
+}
+.col-6{
+    width: 50%;
+}
+.col-8{
+    width: 60%;
+}
 
 /* -------------------------- *\
 	Component
@@ -81,7 +90,11 @@ p{
     right: -5px;
     top: 20px;
 }
-
+.content_card{
+    padding: 8px 12px;
+    width: 600px;
+    border-radius: 20px;
+}
 /* -------------------------- *\
 	Navbar
 \* -------------------------- */
@@ -437,4 +450,168 @@ footer img{
 /* -------------------------- *\
 	min.html
 \* -------------------------- */
+.main{
+    width: 100%;
+    overflow: hidden;
+}
+.main h1{
+    display: inline-block;
+    border-bottom:4px solid #1F3B2C ;
+    letter-spacing: 24px;
+    font-size: 48px;
+}
+.part1{
+    padding-left: 80px;
+}
+.part1_bg{
+    width: 60%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.min_logo{
+   height: 72px;
+    display: flex;
+    align-items: center;
+}
+.part1 h1{
+   margin-top: 80px;
+}
+.part1 .content_card{
+    background-color: #1F3B2C;
+    color: #F9EFDB;
+    margin-top: 120px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+.paragraph{
+    width: 75%;
+    margin-top: 40px;
+}
+.paragraph p{
+    line-height: 48px;
+}
+.main .big_vegetable{
+    position: absolute;
+    top: 450px;
+    right: -200px;
 
+}
+
+.know{
+    width: 100%;
+    margin-top: 200px;
+}
+.know h1{
+    position: absolute;
+    top: 40px;
+    right: 250px;
+}
+.know .content_card{
+    background-color: #EBD9B4;
+    color: #1F3B2C;
+    position: absolute;
+    bottom: 150px;
+    right: 200px;
+}
+/* -------------------------- *\
+	Factory
+\* -------------------------- */
+.factory{
+    margin-top: 150px;
+}
+.factory .subtitle{
+    padding-left: 80px;
+}
+.factory_content{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 80px;
+}
+.factory_content .col-3{
+    height:500px;
+}
+.factory_content .col-3 img{
+    width: 300px;
+}
+.factory_content .col-3 .bg_cir{
+    width: 350px;
+    position: absolute;
+}
+.bg_cir1{
+    left: -40px;
+    top: 50px;
+}
+.bg_cir2{
+    top: 100px;
+}
+.bg_cir3{
+    right: -80px;
+    top: 80px;
+}
+.img1{
+    margin-left:80px ;
+}
+.img2{
+    margin-left:80px ;
+}
+.img3{
+    margin-left:150px ;
+}
+.factory_content .word{
+   text-align: center;
+   width: 300px; 
+   margin-top: 20px;
+   margin-left:50px ;
+}
+/* -------------------------- *\
+	Fruit
+\* -------------------------- */
+.fruit{
+    margin-top: 150px;
+    height: 1200px;
+}
+.fruit_content{
+    display: inline-block;
+    width: 800px;
+}
+.fruit_content .word{
+    margin: 20px 0;
+    margin-left: 100px;
+}
+.fruit .f1{
+    left: -50px;
+}
+.fruit .f2{
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    transform: rotate(30deg);
+    margin-top: 100px;
+}
+
+.fruit .f3{
+    position: absolute;
+    right: -50px;
+    bottom:200px;
+}
+.award{
+    padding: 80px 150px;
+}
+.award .row{
+    flex-wrap: wrap;
+    align-items: center;
+}
+.award .col{
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+.award_content{
+    text-align: center;
+}
+.award_content .content_card{
+    background-color: #9DBC98;
+    color: #FFF;
+    margin: 0 auto ;
+    margin-top: 80px;
+}
