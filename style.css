@@ -10,7 +10,7 @@
 	position: relative;
 }
 html,body {
-    font-family: 'jf-openhuninn';
+    font-family: 'Inter', sans-serif;
 	margin: 0;
 }
 h1,h2,h3,p{
@@ -18,11 +18,18 @@ h1,h2,h3,p{
 }
 p{
     font-size: 20px;
-    line-height: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    letter-spacing: 4px;
 }
 h3{
-    font-size: 28px;
+    font-size: 32px;
     letter-spacing:20px;
+}
+.title{
+    font-size: 48px;
+    letter-spacing: 20px;
+    font-weight: 700;
 }
 
 
@@ -82,11 +89,65 @@ h3{
     text-align: center;
 }
 .header .dust{
+    position: absolute;
     width: 100%;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+}
+.vegetable img{
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: grow 9s infinite ;
+    bottom: -80px;
+}
+
+#v2{
+    bottom: -50px;
+    animation-delay: 3s;
+}
+#v3{
+    bottom: -30px;
+    animation-delay: 5s;
+}
+@keyframes grow{
+    20%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+        bottom: -10px;
+    }
+}
+
+/* seed */
+.seed{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    animation: drop 6s infinite;
+}
+.seed1{
+    animation-delay: 2s;
+}
+.seed2{
+    animation-delay: 1s;
+}
+@keyframes drop{
+    10%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100%{
+        top: 800px;
+        transform: rotate(300deg);
+    }
 }
 
 /* -------------------------- *\
@@ -96,18 +157,16 @@ h3{
     background-color: #1F3B2C;
 }
 .about_container{
-    max-width: 1140px;
     margin: 0 auto;
     color: #EBD9B4;
-    padding: 150px 0;
-    align-items: center;
+    padding: 150px 80px;
+    align-items: stretch;
 
 }
 .about_container .col-3{
-    height: 340px;
     text-align: center;
-    margin: 0 20px;
-    padding:20px;
+    margin: 0 12px;
+    padding:40px 20px;
     border: 3px solid #EBD9B4;
 }
 .about_container .icon{
@@ -123,10 +182,49 @@ h3{
     color: #FFF; 
 }
 
+/* -------------------------- *\
+	Know
+\* -------------------------- */
+.know{
+    width: 100%;
+    height: 700px;
+    z-index: 3;
+}
+.know_container{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    /* border: #EBD9B4 2px solid; */
 
+}
+.know_container .title{
+    color: #F9EFDB;
+    /* border: #EBD9B4 2px solid; */
+}
+.know_box{
+    width: 600px;
+    padding: 20px;
+    border: #1F3B2C 4px solid;
+    background-color: #EBD9B4;
+    opacity: 0.8;
+    margin: 50px auto;
 
+}
 
-
+/* -------------------------- *\
+	News
+\* -------------------------- */
+.news{
+    width: 100%;
+    padding: 200px 0;
+    background-image: url(images/istockphoto-index_bottom_bg.jpg);
+    background-size: cover;
+}
+.news .row{
+    border: 2px solid #FFF;
+}
 
 /* -------------------------- *\
 	Footer
@@ -155,6 +253,7 @@ footer .media img{
     background-image: url(images/product_header.jpg);
     background-size: cover;
 	background-attachment: fixed;
+    background-position: center;
     margin-bottom: 500px;
     text-align: center;
     padding-top: 100px;
