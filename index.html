@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- owlCarousel -->
-    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/assets/owl.carousel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -102,13 +102,13 @@
             </div>
             <div class="row owl-carousel owl-theme">
                 <div class="news_box">
-                    <img src="images/n1.jpg" alt="" height="540px">
+                    <img src="images/n1.jpg" alt="">
                 </div>
                 <div class="news_box">
-                    <img src="images/n2.jpg" alt="" height="540px">
+                    <img src="images/n2.jpg" alt="">
                 </div>
                 <div class="news_box">
-                    <img src="images/n3.jpg" alt="" height="540px">
+                    <img src="images/n3.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -164,13 +164,12 @@
             }
         })
         $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin:40,
+            loop:true,
             center: true,
             autoWidth:true,
-            autoplay: true,  /* 自動輪播 */
-            autoplayTimeout: 3000,/* 輪播速度 */
-            autoplayHoverPause: true,
+            autoHeight:true,
+            // autoplay: true,  /* 自動輪播 */
+            // autoplayTimeout: 3000,/* 輪播速度 */
         })
 
     })

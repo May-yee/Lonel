@@ -35,7 +35,17 @@ h3{
     letter-spacing: 20px;
     font-weight: 700;
 }
-
+@media screen and (max-width: 1024px) {
+    p{
+        font-size: 16px;
+        line-height:36px;
+        letter-spacing: 0;
+    }
+    .title{
+        font-size:36px ;
+        letter-spacing: 12px;
+    }
+}
 
 /* -------------------------- *\
 	Layout
@@ -49,6 +59,7 @@ h3{
 .col-6{
     width: 50%;
 }
+
 .title_box{
     margin-top:150px ;
     width: 100%;
@@ -133,7 +144,6 @@ h3{
 }
 .vegetable img{
     width: 200px;
-    height: 290px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -141,7 +151,18 @@ h3{
     animation: grow 9s infinite ;
     bottom: -80px;
 }
-
+@media screen and (max-width: 1024px){
+    .header{
+        height: 800px;
+    }
+    .header .brand_name{
+        font-size: 60px;
+        letter-spacing: 40px;
+    }
+    .vegetable img{
+        width: 160px;
+    }
+}
 #v2{
     bottom: -50px;
     animation-delay: 3s;
@@ -216,13 +237,27 @@ h3{
 .about_container .col-3 p{
     color: #FFF; 
 }
-
+@media screen and (max-width: 1024px){
+    .about_container{
+        flex-direction: column;
+        align-items:center;
+    }
+    .about_container .col-3{
+        margin: 12px 0;
+        width: auto;
+    }
+}
+.info{
+    width: 100%;
+    background-image: url(images/istockphoto-index_bottom_bg.jpg);
+    background-size: cover;
+    align-items: stretch;
+}
 /* -------------------------- *\
 	Know
 \* -------------------------- */
 .know{
     width: 100%;
-    height: 700px;
     z-index: 3;
 }
 .know_container{
@@ -247,32 +282,49 @@ h3{
     margin: 50px auto;
 
 }
-
+@media screen and (max-width: 1024px){
+    .know_container{
+        top: 50px;
+    }
+    .know_box{
+        width: 540px;
+    }
+}
 /* -------------------------- *\
 	News
 \* -------------------------- */
-.info{
-    width: 100%;
-    padding: 200px 0;
-    background-image: url(images/istockphoto-index_bottom_bg.jpg);
-    background-size: cover;
-    align-items: stretch;
+.news{
+    margin-top: 300px;
 }
 .news .row{
     height: 540px;
-    width: 1140px;
+    max-width: 1140px;
     right: 0;
     /* border: 2px solid #FFF; */
     margin: 120px auto;
     align-items: center;
-
+}
+.news img{
+    height: 540px;
 }
 .news_box{
     position: relative;
     border-radius: 20px;
     overflow: hidden;
+    margin: 0 15px ;
 }
-
+@media screen and (max-width: 1024px){
+    .news{
+        margin-top: 50px;
+    }
+    .news .row{
+        width: 700px;
+        height: 350;
+    }
+    .news img{
+        height: 350px;
+    }
+}
 
 .contact{
     margin-top: 200px;
@@ -288,7 +340,11 @@ h3{
     font-size: 32px;
     margin: 80px 0;
 }
-
+@media screen and (max-width: 1024px){
+    .contact .contact_container p{
+        font-size: 24px;
+    }
+}
 /* -------------------------- *\
 	Footer
 \* -------------------------- */
