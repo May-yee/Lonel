@@ -76,7 +76,6 @@
     
     <div class="info">
         <div class="know">
-            <img src="images/know.png" alt="" width="100%">
             <div class="know_container">
                 <h1 class="title">您或許不認識樂乃農場</h1>
                 <div class="know_box">
@@ -86,29 +85,33 @@
                         面對越趨動盪、不安的食安環境 <br />
                         我們毅然決定創立自有品牌「樂乃農場」<br /> 
                         從產地選購、調理烹飪<br />
-                        乃至配送上架都由我們悉心為您服務</p>
+                        乃至配送上架都由我們悉心為您服務
+                    </p>
     
                 </div>
             </div>
+            <img src="images/know_mask.png" alt="" width="100%">
         </div>
         <div class="news">
             <div class="title_box">
                 <div class="line"></div>
                 <div class="word">
                     <h2 class="title">最新消息</h2>
-                    <p class="subtitle">NEWS</p>
                 </div>
                 <div class="line"></div>
             </div>
-            <div class="row owl-carousel owl-theme">
-                <div class="news_box">
-                    <img src="images/n1.jpg" alt="">
-                </div>
-                <div class="news_box">
-                    <img src="images/n2.jpg" alt="">
-                </div>
-                <div class="news_box">
-                    <img src="images/n3.jpg" alt="">
+            <div class="news_container">
+                <div class="owl-carousel owl-theme">
+                    <div class="news_box">
+                        <img src="images/n1.jpg" alt="">
+                    </div>
+                    <div class="news_box">
+                        <img src="images/n2.jpg" alt="">
+                        
+                    </div>
+                    <div class="news_box">
+                        <img src="images/n3.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,7 +121,6 @@
                 <div class="line"></div>
                 <div class="word">
                     <h2 class="title">聯絡樂乃</h2>
-                    <p class="subtitle">CONTACT</p>
                 </div>
                 <div class="line"></div>
             </div>
@@ -132,7 +134,9 @@
     </div>
 
     <footer>
-        <img src="images/LOGO_W.png" alt="">
+        <div>
+            <img src="images/LOGO_W.png" alt="">
+        </div>
         <div class="footer_content">
             <p>民生食品工業股份有限公司</p>
             <p>Min Sheng Foods Industry Inc.</p>
@@ -167,9 +171,8 @@
             loop:true,
             center: true,
             autoWidth:true,
-            autoHeight:true,
-            // autoplay: true,  /* 自動輪播 */
-            // autoplayTimeout: 3000,/* 輪播速度 */
+            autoplay: true,  /* 自動輪播 */
+            autoplayTimeout: 3000,/* 輪播速度 */
         })
 
     })
