@@ -14,7 +14,17 @@
             <li><a href="min.html">民生食品</a></li>
             <li><a href="product.html">產品介紹</a></li>
         </ul>
+        <div id="burger_btn">
+            <div id="burgerL1"></div>
+            <div id="burgerL2"></div>
+            <div id="burgerL3"></div>
+        </div>
     </div>
+    <ul id="burger_list">
+        <li><a href="#about">樂乃農場</a></li>
+        <li><a href="min.html">民生食品</a></li>
+        <li><a href="product.html">產品介紹</a></li>
+    </ul>
 
     <div class="min_header">
         <div class="logo_box">
@@ -135,6 +145,7 @@
 </body>
 <script src="vendor/jquery/jquery-3.5.1.min.js"></script>
 <script>
+$(document).ready(function(){
     // 導覽列的變化 偵測視窗滾動事件
     $(window).scroll(function () {
         scrolledPx = $(this).scrollTop();
@@ -145,5 +156,11 @@
             $('.navbar').removeClass('show_nav');
         }
     })
+    //burger_btn
+    $("#burger_btn").click(function(){
+        $("#burger_list").slideToggle();
+    })
+
+})
 </script>
 </html>

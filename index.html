@@ -19,7 +19,17 @@
             <li><a href="min.html">民生食品</a></li>
             <li><a href="product.html">產品介紹</a></li>
         </ul>
+        <div id="burger_btn">
+            <div id="burgerL1"></div>
+            <div id="burgerL2"></div>
+            <div id="burgerL3"></div>
+        </div>
     </div>
+    <ul id="burger_list">
+        <li><a href="#about">樂乃農場</a></li>
+        <li><a href="min.html">民生食品</a></li>
+        <li><a href="product.html">產品介紹</a></li>
+    </ul>
     
     <div class="header">
         <img src="images/seed_1.png" alt="" class="seed">
@@ -173,6 +183,11 @@
             autoWidth:true,
             autoplay: true,  /* 自動輪播 */
             autoplayTimeout: 3000,/* 輪播速度 */
+        })
+
+        //burger_btn
+        $("#burger_btn").click(function(){
+            $("#burger_list").slideToggle();
         })
 
     })
