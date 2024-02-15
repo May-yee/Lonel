@@ -139,23 +139,24 @@ ul li a{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 #burger_btn div{
-    width: 40px;
+    width: 36px;
     height: 3px;
     background-color: #1F3B2C;
 }
 
 #burger_list{
     position: fixed;
+    top:40px;
     right: 0;
     z-index: 9;
     width: 150px;
     background-color: #FFF;
     flex-direction: column;
-    padding:80px 12px;
+    padding:20px 12px;
     display: none;
 }
 #burger_list li{
@@ -170,6 +171,9 @@ ul li a{
     }
     #burger_btn{
         display: flex;
+    }
+    .navbar a img{
+        height: 40px;
     }
 }
 /* -------------------------- *\
@@ -471,6 +475,9 @@ footer{
 footer img{
     width: 200px;
 }
+footer .media{
+    margin: 20px 12px;
+}
 footer .media img{
     width: 60px;
 }
@@ -746,33 +753,32 @@ footer .media img{
 .product_header{
     width: 100%;
     text-align: center;
+    height: 800px;
+    background-image: url(images/product/product_header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .brand_box{
     position: absolute;
-    bottom: 0;
-    z-index: 4;
-    background-image: url(images/product/product_mask.png);
-    background-size: cover;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 80px;
+}
+.brand_box img{
+    width: 320px;
 }
 .product_header .brand_box h1{
     color: #FFF;
-    font-size: 60px;
+    font-size: 48px;
     letter-spacing: 24px;
     margin-top: 40px;
 }
-
-.product_title{
-    font-size: 160px;
-    color: #1F3B2C;
-    font-family: 'RocknRoll One', sans-serif;
-    display: inline-block;
+.bottom_mask{
     position: absolute;
-    top: 50px;
-    right: 50px;
-    letter-spacing: 60px;
-    font-weight: lighter;
+    bottom: -6px;
 }
+
 
 .product .row{
     width: 80%;
@@ -780,10 +786,11 @@ footer .media img{
     margin-bottom: 0;
     justify-content: space-around;
     flex-wrap: wrap;
+    /* border: #1F3B2C 2px solid; */
 }
 .product .row .col-6{
-    width: 480px;
-    margin: 40px 0;
+    width: 440px;
+    margin: 40px 50px;
 }
 
 
@@ -791,8 +798,9 @@ footer .media img{
 
 .product_img{
     width:100% ;
-    height: 300px;
+    height: 240px;
     background-size: cover;
+    background-position: center;
 }
 .product_content{
     background-color:#EBD9B4 ;
@@ -800,39 +808,44 @@ footer .media img{
     padding: 20px;
     text-align: center;
 }
-
-
-.food{
-    padding: 200px 0;
-}
-.food img{
-    position: absolute;
-    top: 100px;
-    left: 0;
-}
-
 .product_content .box_line{
+    padding: 8px 16px;
     border: #1F3B2C solid 2px;
 }
-.noodle{
-    padding: 200px 0;
-    background-color: #EBD9B4;
+.product_content .box_line h3{
+    font-family: 'RocknRoll One', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    margin-bottom: 8px;
 }
-.noodle .img1{
-    position: absolute;
-    top: 0;
-    left: -100px;
-    width: 700px;
+.title_Bg{
+    height: 500px;
+    width: 100%;
 }
-.noodle .img2{
-    position: absolute;
-    right: 0;
-    top: -500px;
-}
-.noodle .product_title{
+.titleBg .product_title{
+    font-size: 80px;
+    font-family: 'RocknRoll One', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 60px;
     color: #1F3B2C;
-    right: 20px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+
+.noodle .titleBg{
+    background-image: url(images/product/noodle_bg.png);
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 100px;
+}
+.noodle .titleBg .product_title{
+    position: absolute;
+    right: 50px;
+    color: #EBD9B4;
+}
+
 .noodle .product_content{
     color: #EBD9B4;
     background-color: #1F3B2C;
@@ -842,15 +855,13 @@ footer .media img{
     border-color: #EBD9B4;
 }
 
+
+
+
 .vet{
     padding:200px 0;
 }
-.vet img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 400px;
-}
+
 .vet .product_title{
     left: 50px;
     
