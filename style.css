@@ -13,8 +13,11 @@ html,body {
     font-family: 'Inter', sans-serif;
 	margin: 0;
 }
-h1,h2,h3,p{
+h1,h2,h3,h4,p{
     margin: 0;
+}
+a{
+    text-decoration: none;
 }
 p{
     font-size: 20px;
@@ -29,6 +32,11 @@ h2{
 h3{
     font-size: 32px;
     letter-spacing:20px;
+}
+h4{
+    font-size: 24px;
+    letter-spacing:12px;
+    margin:4px 0 ;
 }
 .title{
     font-size: 48px;
@@ -952,5 +960,91 @@ footer .media img{
     .noodle .product_title{
         padding-right: 0;
         text-align: center;
+    }
+}
+
+/* ---------------- *\
+	product_page
+\* ---------------- */
+.product_page{
+    width: 1040px;
+    padding: 150px 0;
+    margin: 0 auto;
+    background-color: #EBD9B4;
+}
+.product_page .row .col-6{
+    margin: 0 20px;
+}
+.product_page .row .col-6 img{
+    width: 100%;
+}
+.product_page .row .col-6 h3{
+    padding: 4px;
+    background-color: #1F3B2C;
+    color: #EBD9B4;
+    margin-bottom: 8px;
+}
+.pLine{
+    border-left: #1F3B2C 4px solid;
+    margin: 8px 0;
+    padding-left: 8px;
+}
+.product_other_content a{
+    color: #1F3B2C;
+    border-bottom: #1F3B2C 1px solid;
+    font-weight: bold;
+}
+.product_other{
+    padding:40px;
+}
+.product_other_content{
+    padding:12px;
+    border: #1F3B2C 2px solid;
+}
+.product_other_content p{
+    letter-spacing: 0;
+}
+.product_other_content h4{
+    display: inline-block;
+    background-color: #1F3B2C;
+    color: #EBD9B4;
+    padding: 4px;
+}
+.btn_group h3{
+    color: #1F3B2C;
+    font-size: 28px;
+    margin: 8px;
+    padding-left: 12px;
+}
+.btn_group .btn.click{
+    border-bottom: #1F3B2C 4px solid;
+}
+.btn{
+    cursor: pointer;
+}
+
+#buy_con{
+    display: none;
+}
+
+@media screen and (max-width: 740px) {
+    .product_page{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .product_page .row{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .product_page .row .col-6{
+        width: 100%;
+    }
+    .product_other{
+        padding: 0;
+        margin: 12px;
+    }
+    .btn_group .btn{
+        font-size: 20px;
+        letter-spacing: 4px;
     }
 }
